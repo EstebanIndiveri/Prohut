@@ -2,10 +2,9 @@ import React from 'react';
 import Layout from '../components/layout/Layout'
 import DetallesProducto from '../components/layout/DetallesProducto';
 import useProductos from '../hooks/useProductos';
+export default function Populares() {
+  const {productos}=useProductos('votos')
 
-
-export default function Home() {
-  const {productos} = useProductos('creado');
   return (
     <div>
         <Layout>
@@ -26,3 +25,4 @@ export default function Home() {
     
   )
 }
+
